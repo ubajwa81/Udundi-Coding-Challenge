@@ -26,6 +26,6 @@ button {
   outline: none;
 }
 
-a:hover path {
+.social-icons a:hover path {
   fill: #611818;
 }
