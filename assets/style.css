@@ -21,3 +21,7 @@ body {
 .button-gradiant {
   background: linear-gradient(90deg, #611818 0%, #A36754 100%);
 }
+
+button {
+  outline: none;
+}
