@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Didot';
+    src: url('/fonts/Didot.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.heading-font {
+  font-family: 'Didot', serif;
+}
+
+.button-gradiant {
+  background: linear-gradient(90deg, #611818 0%, #A36754 100%);
+}
