@@ -25,3 +25,7 @@ body {
 button {
   outline: none;
 }
+
+a:hover path {
+  fill: #611818;
+}

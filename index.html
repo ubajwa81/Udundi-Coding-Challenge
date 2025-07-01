@@ -10,17 +10,17 @@
 <body class="bg-white overflow-x-hidden">
 
     <!-- Section Container -->
-    <div class="flex h-screen w-full relative">
+    <div class="flex h-screen w-full relative overflow-hidden">
 
         <!-- Left Section -->
-        <div class="bg-[#611C1C] w-full max-w-[30%] h-full flex flex-col justify-center items-start px-8 md:px-16">
+        <div class="bg-[#611C1C] w-full max-w-[30%] h-full flex flex-col justify-center items-start px-8 lg:px-16">
 
         </div>
         <!-- Modal -->
         <div id="exploreModal"
-            class="opacity-0 invisible absolute left-[50%] md:left-[23%] top-1/2 md:h-auto h-[90vh] md:w-auto w-full -translate-x-[50%] md:-translate-x-[23%] -translate-y-1/2 transform scale-0 items-center justify-center z-50 transition-all duration-500 ease-in-out flex" role="dialog"
+            class="opacity-0 invisible absolute left-[50%] lg:left-[23%] top-1/2 lg:h-auto h-[90vh] lg:w-auto w-full -translate-x-[50%] lg:-translate-x-[23%] -translate-y-1/2 transform scale-0 items-center justify-center z-50 transition-all duration-500 ease-in-out flex" role="dialog"
             aria-modal="true" aria-labelledby="modalTitle">
-            <div class="bg-white w-full max-w-md md:max-w-lg mx-4 md:mx-0 p-6 md:p-10 relative">
+            <div class="bg-white w-full max-w-md lg:max-w-lg mx-4 lg:mx-0 p-6 lg:p-10 relative">
                 <button id="closeModalBtn" class="cursor-pointer absolute top-3 right-4 text-gray-500 hover:text-black text-2xl font-bold" aria-label="Close modal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                         <path d="M7.47211 6.08565L13.3347 0L14.8426 1.44954L8.93825 7.31805L15 13.1986L13.4303 14.8552L7.65339 8.91838L1.751 15L0.129482 13.4359C2.12151 11.4596 4.05777 9.55167 6.04781 7.58745L0 1.65259L1.55378 0L7.47211 6.08565Z" fill="#611818"/>
@@ -34,11 +34,11 @@
                 <a href="/" class="button-gradiant text-white px-8 h-[44px] tracking-[2px] inline-block leading-[44px] py-0 text-sm">READ MORE</a>
             </div>
         </div>
-        <div class="content left-0 md:text-left text-center w-full md:left-[calc(30%-210px)] z-[1] bottom-[50%] translate-y-1/2 md:translate-y-0 md:bottom-0 pt-[10%] md:pt-0 pb-[10%] absolute h-[fit-content]">
-            <h1 class="text-white md:text-[224px] text-[90px] leading-[1.5] leading-none font-bold heading-font">Explore</h1>
+        <div class="content left-0 lg:text-left text-center w-full lg:left-[calc(30%-210px)] z-[1] bottom-[50%] translate-y-1/2 lg:translate-y-0 lg:bottom-0 pt-[10%] lg:pt-0 pb-[10%] absolute h-[fit-content]">
+            <h1 class="text-white lg:text-[224px] text-[90px] leading-[1.5] leading-none font-bold heading-font">Explore</h1>
             
             <button id="openModalBtn"
-                class="cursor-pointer flex text-[25px] mx-auto md:mx-0 items-center mt-10 gap-2 text-white"
+                class="cursor-pointer flex text-[25px] mx-auto lg:mx-0 items-center mt-10 gap-2 text-white"
                 aria-haspopup="dialog" aria-controls="exploreModal">
                 <span class="text-lg font-bold">
                     <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
@@ -48,7 +48,7 @@
                 </span>
                 <span>More Details</span>
             </button>
-            <div class="md:hidden flex flex-row justify-center pt-10 gap-4 z-[99]">
+            <div class="lg:hidden flex flex-row justify-center pt-10 gap-4 z-[99]">
                 <a href="#" class="w-[50px] h-[50px]">
                     <svg class="w-[50px] h-[50px]" xmlns="http://www.w3.org/2000/svg" width="74" height="73" viewBox="0 0 74 73" fill="none">
                         <g filter="url(#filter0_d_0_7)">
@@ -107,7 +107,7 @@
         <!-- Right Image Section -->
         <div class="relative w-full h-full"> 
             <img src="assets/Image.jpg" class="w-full h-full object-cover"alt="Forest Image" width="" height="" loading="lazy" />
-            <div class="absolute bottom-6 md:flex hidden right-6 flex flex-col gap-4 z-[99]">
+            <div class="absolute bottom-6 lg:flex hidden right-6 flex flex-col gap-4 z-[99]">
                 <a href="#" class="w-[50px] h-[50px]">
                     <svg class="w-[50px] h-[50px]" xmlns="http://www.w3.org/2000/svg" width="74" height="73" viewBox="0 0 74 73" fill="none">
                         <g filter="url(#filter0_d_0_7)">
