@@ -17,7 +17,24 @@
 
         </div>
         <!-- Modal -->
-        <div id="exploreModal"
+        
+
+        <div class="content left-0 lg:text-left text-center w-full lg:left-[calc(30%-210px)] z-[1] bottom-[50%] translate-y-1/2 lg:translate-y-0 lg:bottom-0 pt-[10%] lg:pt-0 pb-[10%] absolute h-[fit-content]">
+            <h1 class="text-white lg:text-[224px] text-[90px] leading-[1.5] leading-none font-bold heading-font">Explore</h1>
+            
+            <button id="openModalBtn"
+                class="cursor-pointer flex text-[25px] mx-auto lg:mx-0 items-center mt-10 gap-2 text-white transition-all duration-700 ease-in-out overflow-hidden"
+                aria-haspopup="dialog" aria-controls="exploreModal">
+                <span class="text-lg font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.5C0 9.62588 9.62588 0 21.5 0C27.2022 0 32.6708 2.26517 36.7028 6.2972C40.7348 10.3292 43 15.7978 43 21.5C43 33.3741 33.3741 43 21.5 43C9.62588 43 0 33.3741 0 21.5ZM22.4673 22.1386H29.3045V20.3237H22.4673V13.2142H20.5327V20.3237H13.6955V22.1386H20.5327V29.3092H22.4673V22.1386Z" fill="white"/>
+                        <script xmlns=""/>
+                    </svg>
+                </span>
+                <span>More Details</span>
+            </button>
+
+            <div id="exploreModal"
             class="opacity-0 lg:origin-[10%_90%] invisible absolute left-[50%] lg:left-[23%] top-1/2 lg:h-auto h-[90vh] lg:w-auto w-full -translate-x-[50%] lg:-translate-x-[23%] -translate-y-1/2 transform scale-0 items-center justify-center z-50 transition-all duration-500 ease-in-out flex" role="dialog"
             aria-modal="true" aria-labelledby="modalTitle">
             <div class="bg-white w-full max-w-md lg:max-w-lg mx-4 lg:mx-0 p-6 lg:p-10 relative">
@@ -34,20 +51,8 @@
                 <a href="/" class="button-gradiant text-white px-8 h-[44px] tracking-[2px] inline-block leading-[44px] py-0 text-sm">READ MORE</a>
             </div>
         </div>
-        <div class="content left-0 lg:text-left text-center w-full lg:left-[calc(30%-210px)] z-[1] bottom-[50%] translate-y-1/2 lg:translate-y-0 lg:bottom-0 pt-[10%] lg:pt-0 pb-[10%] absolute h-[fit-content]">
-            <h1 class="text-white lg:text-[224px] text-[90px] leading-[1.5] leading-none font-bold heading-font">Explore</h1>
-            
-            <button id="openModalBtn"
-                class="cursor-pointer flex text-[25px] mx-auto lg:mx-0 items-center mt-10 gap-2 text-white transition-all duration-700 ease-in-out overflow-hidden"
-                aria-haspopup="dialog" aria-controls="exploreModal">
-                <span class="text-lg font-bold">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.5C0 9.62588 9.62588 0 21.5 0C27.2022 0 32.6708 2.26517 36.7028 6.2972C40.7348 10.3292 43 15.7978 43 21.5C43 33.3741 33.3741 43 21.5 43C9.62588 43 0 33.3741 0 21.5ZM22.4673 22.1386H29.3045V20.3237H22.4673V13.2142H20.5327V20.3237H13.6955V22.1386H20.5327V29.3092H22.4673V22.1386Z" fill="white"/>
-                        <script xmlns=""/>
-                    </svg>
-                </span>
-                <span>More Details</span>
-            </button>
+
+
             <div class="lg:hidden flex flex-row justify-center pt-40 gap-4 z-[99]">
                 <a href="#" class="w-[50px] h-[50px]">
                     <svg class="w-[50px] h-[50px]" xmlns="http://www.w3.org/2000/svg" width="74" height="73" viewBox="0 0 74 73" fill="none">
