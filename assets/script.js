@@ -11,7 +11,6 @@ const showModal = (e) => {
         content.classList.add("opacity-0","invisible");
         mainContent.classList.add("active");
         document.body.style.overflow = "hidden";
-        modal.querySelector("button").focus();
     }, 200);
 };
 
@@ -21,16 +20,7 @@ const hideModal = (e) => {
     openBtn.classList.remove("opacity-0","invisible");
     content.classList.remove("opacity-0","invisible");
     gsap.fromTo(openBtn.querySelector('svg'), {scale: 1}, {scale: 0.75, duration: 0.25, yoyo: true, repeat: 1, overwrite: true}); 
-    openBtn.focus();   
 };
 
 openBtn.addEventListener("click", (e) => showModal(e));
 closeBtn.addEventListener("click", (e) => hideModal(e));
-modal.addEventListener("click", (e) => {
-    if (e.target === modal) hideModal();
-});
-
-window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.classList.contains("flex")) hideModal();
-});
-
