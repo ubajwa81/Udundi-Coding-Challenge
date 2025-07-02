@@ -29,3 +29,42 @@ button {
 .social-icons a:hover path {
   fill: #611818;
 }
+
+.content {
+  position: absolute;
+  left: calc(30% - 220px);
+  bottom: 0;
+}
+
+#exploreModal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scale(0);
+  transform-origin: 6% 94%;
+  transition: 0.5s;
+}
+
+.content.active #exploreModal {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    margin: 0;
+  }
+  #exploreModal {
+    left: 50%;
+    top: 50%;
+    bottom: unset;
+    transform: scale(0) translate(-50%, -50%);
+    transform-origin: center;
+    transition: 0.5s;
+  }
+  .content.active #exploreModal {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
