@@ -31,7 +31,7 @@ const hideModal = () => {
         // openBtn.classList.remove('scale-0', 'opacity-0');
         // openBtn.classList.add('scale-100', 'opacity-100');
         openBtn.classList.remove("opacity-0","invisible");
-        openBtn.focus();
+        openBtn.focus();    
     }, 400);
 
 
