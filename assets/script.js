@@ -4,6 +4,7 @@ const closeBtn = document.getElementById("closeModalBtn");
 const content = document.querySelector(".content");
 
 const showModal = () => {
+    gsap.fromTo(e.currentTarget.querySelector('svg'), {scale: 1}, {scale: 0.75, duration: 0.25, yoyo: true, repeat: 1, overwrite: true});
     modal.classList.remove("opacity-0","invisible","scale-0");
     content.classList.add("opacity-0","invisible");
     document.body.style.overflow = "hidden";
