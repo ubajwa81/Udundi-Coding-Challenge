@@ -26,12 +26,12 @@ const hideModal = () => {
     content.classList.remove("opacity-0","invisible");
     modal.classList.add("opacity-0","invisible","scale-0");
     document.body.style.overflow = "";
-    openBtn.focus();
 
     setTimeout(() => {
         // openBtn.classList.remove('scale-0', 'opacity-0');
         // openBtn.classList.add('scale-100', 'opacity-100');
         openBtn.classList.remove("opacity-0","invisible");
+        openBtn.focus();
     }, 400);
 
 
