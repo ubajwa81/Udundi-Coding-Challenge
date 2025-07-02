@@ -5,12 +5,14 @@ const mainContent = document.querySelector(".content");
 const content = document.querySelector(".content-heading");
 
 const showModal = (e) => {
-    openBtn.classList.add("opacity-0","invisible");
-    content.classList.add("opacity-0","invisible");
-    mainContent.classList.add("active");
-    document.body.style.overflow = "hidden";
     gsap.fromTo(e.currentTarget.querySelector('svg'), {scale: 1}, {scale: 0.75, duration: 0.25, yoyo: true, repeat: 1, overwrite: true});
-    modal.querySelector("button").focus();
+    setTimeout(() => {
+        openBtn.classList.add("opacity-0","invisible");
+        content.classList.add("opacity-0","invisible");
+        mainContent.classList.add("active");
+        document.body.style.overflow = "hidden";
+        modal.querySelector("button").focus();
+    }, 200);
 };
 
 const hideModal = (e) => {

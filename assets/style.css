@@ -43,6 +43,7 @@ button {
   transform: scale(0);
   transform-origin: 6% 94%;
   transition: 0.5s;
+  z-index: 999;
 }
 
 .content.active #exploreModal {
@@ -57,14 +58,14 @@ button {
     margin: 0;
   }
   #exploreModal {
-    left: 50%;
-    top: 50%;
+    left: 0%;
+    top: 0;
     bottom: unset;
-    transform: scale(0) translate(-50%, -50%);
-    transform-origin: center;
-    transition: 0.5s;
+    transform: scale(0);
+    transform-origin: 30% 46%;
+    height: 100%;
   }
   .content.active #exploreModal {
-    transform: scale(1) translate(-50%, -50%);
+    transform: scale(1);
   }
 }
