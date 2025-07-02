@@ -3,11 +3,11 @@ const openBtn = document.getElementById("openModalBtn");
 const closeBtn = document.getElementById("closeModalBtn");
 const content = document.querySelector(".content");
 
-const showModal = () => {
-    gsap.fromTo(e.currentTarget.querySelector('svg'), {scale: 1}, {scale: 0.75, duration: 0.25, yoyo: true, repeat: 1, overwrite: true});
+const showModal = (e) => {
     modal.classList.remove("opacity-0","invisible","scale-0");
     content.classList.add("opacity-0","invisible");
     document.body.style.overflow = "hidden";
+    gsap.fromTo(e.currentTarget.querySelector('svg'), {scale: 1}, {scale: 0.75, duration: 0.25, yoyo: true, repeat: 1, overwrite: true});
     modal.querySelector("button").focus();
 };
 
@@ -18,7 +18,7 @@ const hideModal = () => {
     openBtn.focus();
 };
 
-openBtn.addEventListener("click", showModal);
+openBtn.addEventListener("click", (e) => showModal(e));
 closeBtn.addEventListener("click", hideModal);
 modal.addEventListener("click", (e) => {
     if (e.target === modal) hideModal();
