@@ -4,11 +4,22 @@ const closeBtn = document.getElementById("closeModalBtn");
 const content = document.querySelector(".content");
 
 const showModal = (e) => {
+
+    //openBtn.classList.add('scale-0', 'opacity-0');
+    
+    openBtn.classList.add("opacity-0","invisible");
+    setTimeout(() => {
+        
     modal.classList.remove("opacity-0","invisible","scale-0");
     content.classList.add("opacity-0","invisible");
     document.body.style.overflow = "hidden";
     gsap.fromTo(e.currentTarget.querySelector('svg'), {scale: 1}, {scale: 0.75, duration: 0.25, yoyo: true, repeat: 1, overwrite: true});
     modal.querySelector("button").focus();
+
+    }, 300);
+
+
+
 };
 
 const hideModal = () => {
@@ -16,6 +27,14 @@ const hideModal = () => {
     modal.classList.add("opacity-0","invisible","scale-0");
     document.body.style.overflow = "";
     openBtn.focus();
+
+    setTimeout(() => {
+        // openBtn.classList.remove('scale-0', 'opacity-0');
+        // openBtn.classList.add('scale-100', 'opacity-100');
+        openBtn.classList.remove("opacity-0","invisible");
+    }, 400);
+
+
 };
 
 openBtn.addEventListener("click", (e) => showModal(e));
@@ -27,3 +46,4 @@ modal.addEventListener("click", (e) => {
 window.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modal.classList.contains("flex")) hideModal();
 });
+
